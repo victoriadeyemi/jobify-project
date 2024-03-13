@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -8,8 +8,10 @@ function App() {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    axios.get('https://api.github.com/users/mapbox')
-      .then(response => {
+    // axios.get('https://serpapi.com/search?engine=google_jobs&q=developer&api_key=8b16ce92284431cdb2f45cb5861249e983bb63eb80c6899acdd42d5a25f43325')
+        axios.get('https://api.github.com/users')
+  
+    .then(response => {
         console.log(response.data);
       });
   }, []);
