@@ -8,12 +8,24 @@ function App() {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    // axios.get('https://serpapi.com/search?engine=google_jobs&q=developer&api_key=8b16ce92284431cdb2f45cb5861249e983bb63eb80c6899acdd42d5a25f43325')
-        axios.get('https://api.github.com/users')
-  
-    .then(response => {
-        console.log(response.data);
-      });
+    const axios = require('axios');
+
+const options = {
+  method: 'GET',
+  url: 'https://workable.p.rapidapi.com/%7BAPIKEY%7D/jobs',
+  params: {phase: 'published'},
+  headers: {
+    'X-RapidAPI-Key': '7d4e026fbfmshb83e62c3591132ap18f668jsn50e92cf08c77',
+    'X-RapidAPI-Host': 'workable.p.rapidapi.com'
+  }
+};
+
+try {
+	const response = axios.request(options);
+	console.log(response.data);
+} catch (error) {
+	console.error(error);
+}
   }, []);
 
   return (
