@@ -9,24 +9,38 @@ function App() {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    const axios = require('axios');
+    // Set the API endpoint URL
+const apiUrl = 'https://www.reed.co.uk/api/1.0/search';
 
-const options = {
-  method: 'GET',
-  url: 'https://workable.p.rapidapi.com/%7BAPIKEY%7D/jobs',
-  params: {phase: 'published'},
-  headers: {
-    'X-RapidAPI-Key': '7d4e026fbfmshb83e62c3591132ap18f668jsn50e92cf08c77',
-    'X-RapidAPI-Host': 'workable.p.rapidapi.com'
-  }
+// Set the API key
+const apiKey = '2461cb12-4726-4b4c-8409-75aed7f5fb9d';
+
+// Set the search parameters
+const searchParams = {
+  keywords: 'accountant',
+  locationName: 'London',
+  distanceFromLocation: '15',
+  // Add more search parameters as needed
 };
 
-try {
-	const response = axios.request(options);
-	console.log(response.data);
-} catch (error) {
-	console.error(error);
-}
+// Set the proxy server URL
+const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+
+// Make the API request using Axios
+axios.get(proxyUrl + apiUrl, {
+  params: searchParams,
+  headers: {
+    'Authorization': `Basic ${btoa(apiKey + ':')}`,
+  },
+})
+.then((response) => {
+  // Handle the response data
+  console.log(response.data);
+})
+.catch((error) => {
+  // Handle any errors
+  console.error(error);
+});
   }, []);
 
   return (
