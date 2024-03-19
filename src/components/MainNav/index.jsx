@@ -1,5 +1,4 @@
 import React from 'react';
-import tailwindConfig from '../../../tailwind.config';
 
 function Navbar() {
 
