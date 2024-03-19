@@ -1,5 +1,4 @@
 import React from "react";
-import tailwind from "../../../tailwind.config";
 
 function Footer() {
 

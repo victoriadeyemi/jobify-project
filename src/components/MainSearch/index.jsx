@@ -1,5 +1,4 @@
 import react from 'react';
-import tailwind from '../../../tailwind.config';
 
 function Search() {
 
