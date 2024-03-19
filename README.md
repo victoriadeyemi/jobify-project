@@ -2,11 +2,10 @@
 
 
 ## Description
-A job board application for talent to the job they deserve.
+A job board application for talent to find the job they deserve.
 
 **** The rest is from an old read me... to be edited as we carry on***
-This application will take in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person. This application enables a manager as a user to generate a webpage that displays their team's basic info so that they have quick access to their emails and GitHub profiles.
-
+This application will take in information from users who are seeking prospective employers, about the roles they seek, location and desired pay.  This application enables job seekers to find the roles they seeking in the respective location.
 
 ## Table of Contents
 - [Team-profile-generator](#team-profile-generator)
