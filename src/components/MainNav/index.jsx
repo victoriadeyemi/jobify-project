@@ -7,7 +7,7 @@ function Navbar() {
 
       <div className="container mx-auto">
 
-
+  
         <div className="flex justify-between items-center">
 
           <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -18,11 +18,13 @@ function Navbar() {
 
             <a href="#footer" className="text-cyan-600 font-bold p-2 hover:text-blue-300">Contact</a>
 
+
           </div>
 
         </div>
 
-      </div>
+        </div>
+
 
     </nav>
 
