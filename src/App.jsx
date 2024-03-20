@@ -5,7 +5,6 @@ import MainHero from '/src/components/MainHero/index.jsx'
 import MainFooter from '/src/components/MainFooter/index.jsx'
 import axios from 'axios'
 
-
 function App() {
   const [count, setCount] = useState(0);
 
