@@ -1,10 +1,19 @@
 import React from 'react'
+import MainSearch from '../MainSearch'
 
 function Hero() {
   return (
-  <div class="w-screen h-full " >
-    <img src="src\components\MainHero\Images\hero.jpg" class="w-screen h-full"></img>
-  </div>
+    <div className="Hero w-screen h-full " >
+      <img src="src\components\MainHero\Images\hero.jpg" className="w-screen h-full"></img>
+
+      <div className='searchbar'>
+        
+        <MainSearch />
+
+      </div>
+    </div>
+
+
   );
 }
 

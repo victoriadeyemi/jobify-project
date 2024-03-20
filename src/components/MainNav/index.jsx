@@ -3,7 +3,7 @@ import React from 'react';
 function Navbar() {
 
   return (
-    <nav className="bg-opacity-10 bg-white w-screen mx-0.5 p-3 border-gray-200 rounded-[36px]">
+    <nav className="bg-opacity-75 bg-white w-screen mx-0.5 px-3 border-gray-200 rounded-[36px]">
 
       <div className="container mx-auto">
 
@@ -30,6 +30,8 @@ function Navbar() {
       </div>
 
     </nav>
+
+
 
   );
 

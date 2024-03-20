@@ -4,6 +4,23 @@
   /* padding: 2rem; */
   text-align: center;
 }
+
+
+.Hero {
+  position: relative;
+}
+
+.searchbar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* .search {
+  background-color: cyan-600;
+} */
+
 .logo {
   height: 6em;
   padding: 1.5em;
