@@ -5,15 +5,15 @@ function Navbar() {
   return (
     <nav className="bg-opacity-75 bg-white w-screen mx-0.5 px-3 border-gray-200 rounded-[36px]">
 
-      <div className="container mx-auto">
+        <div className="container mx-auto">
 
-        <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center">
 
         <a href="./index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
           <img src="src\components\MainNav\images\navlogo.png" alt="logo" className=" rounded w-30 h-20" />
     </a>
 
-          <div className="hidden md:flex space-x-4">
+            <div className="hidden md:flex space-x-4">
 
             <a href="#" className="text-cyan-600 font-bold p-2 hover:text-blue-300">Home</a>
 
@@ -23,13 +23,13 @@ function Navbar() {
 
             <a href="#" className="text-cyan-600 font-bold p-2 hover:text-blue-300">Contact</a>
 
+            </div>
+
           </div>
 
         </div>
 
-      </div>
-
-    </nav>
+      </nav>
 
 
 
