@@ -2,7 +2,7 @@
 import React from 'react';
 
 
-function Search({ searchParams, setSearchParams }) {
+function Search({ fetchJobs, searchParams, setSearchParams }) {
     const handleChange = (e) => {
         const { id, value } = e.target;
         setSearchParams((prevSearchParams) => ({
@@ -13,16 +13,13 @@ function Search({ searchParams, setSearchParams }) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const apiUrl = 'https://www.reed.co.uk/api/1.0/search';
-        const apiKey = 'b85ff21b-c075-4a4b-863f-cbfdd2f47c33';
-        const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+        fetchJobs();
     }
     return (
         <div className="flex items-center bg-cover bg-bottom p-10 md:py-32 md:px-16">
 
             <form className="bg-cyan-600 bg-opacity-75 p-6 md:p-10 rounded-lg w-full shadow-lg"
             onSubmit={handleSubmit}
-            value={searchParams}
             >
                 <h1 className="font-serif text-2xl md:text-3xl leading-tight text-center font-normal text-white mb-8">Find your dream JOB today!</h1>
 

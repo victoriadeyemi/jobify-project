@@ -2,7 +2,7 @@ import React from 'react'
 import MainSearch from '../MainSearch'
 
 
-function Hero({searchParams, setSearchParams}) {
+function Hero({fetchJobs, searchParams, setSearchParams}) {
   return (
 
     <div className="Hero w-screen h-full " >
@@ -10,7 +10,7 @@ function Hero({searchParams, setSearchParams}) {
 
       <div className='searchbar'>
         
-        <MainSearch searchParams={searchParams} setSearchParams={setSearchParams} />
+        <MainSearch fetchJobs={fetchJobs} searchParams={searchParams} setSearchParams={setSearchParams} />
 
       </div>
     </div>

@@ -16,7 +16,7 @@ function App() {
     distanceFromLocation: '15',
   });
 
-  useEffect(() => {
+  const fetchJobs = () => {
     const apiUrl = 'https://www.reed.co.uk/api/1.0/search';
     const apiKey = 'b85ff21b-c075-4a4b-863f-cbfdd2f47c33';
     const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
@@ -39,13 +39,13 @@ function App() {
         // Handle any errors
         console.error(error);
       });
-  }, []);
+  };
 
   return (
     <>
       <MainNav />
 
-      <MainHero searchParams={searchParams} setSearchParams={setSearchParams} />
+      <MainHero fetchJobs={fetchJobs} searchParams={searchParams} setSearchParams={setSearchParams} />
 
     <div className="container mx-auto"> 
       {(searchResults.length > 0) && (
