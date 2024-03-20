@@ -1,7 +1,8 @@
 import React from 'react'
 import MainSearch from '../MainSearch'
 
-function Hero() {
+
+function Hero({searchParams, setSearchParams}) {
   return (
 
     <div className="Hero w-screen h-full " >
@@ -9,7 +10,7 @@ function Hero() {
 
       <div className='searchbar'>
         
-        <MainSearch />
+        <MainSearch searchParams={searchParams} setSearchParams={setSearchParams} />
 
       </div>
     </div>
