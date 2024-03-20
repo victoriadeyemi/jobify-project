@@ -3,7 +3,7 @@ import './App.css'
 import MainNav from '/src/components/MainNav/index.jsx'
 import MainHero from '/src/components/MainHero/index.jsx'
 import MainFooter from '/src/components/MainFooter/index.jsx'
-import MainSearch from '/src/components/MainSearch/index.jsx'
+// import MainSearch from '/src/components/MainSearch/index.jsx'
 import axios from 'axios'
 
 
@@ -53,7 +53,7 @@ function App() {
 
       <MainFooter />
 
-      <MainSearch/>
+      {/* <MainSearch/> */}
 
 
     </>
