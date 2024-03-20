@@ -9,12 +9,15 @@ import axios from 'axios'
 function App() {
   const [count, setCount] = useState(0);
 
+  const [searchResults, setSearchResults] = useState([]);
+
+
   useEffect(() => {
     // Set the API endpoint URL
     const apiUrl = 'https://www.reed.co.uk/api/1.0/search';
 
     // Set the API key
-    const apiKey = '2461cb12-4726-4b4c-8409-75aed7f5fb9d';
+    const apiKey = 'b85ff21b-c075-4a4b-863f-cbfdd2f47c33';
 
     // Set the search parameters
     const searchParams = {
@@ -37,6 +40,9 @@ function App() {
       .then((response) => {
         // Handle the response data
         console.log(response.data);
+
+        setSearchResults(response.data.results)
+
       })
       .catch((error) => {
         // Handle any errors
@@ -50,7 +56,27 @@ function App() {
 
       <MainHero />
 
-      <MainSearchResults/>
+
+      <MainSearch/>
+    <div className="container mx-auto"> 
+      {(searchResults.length > 0) && (
+        <div className="searchResults grid grid-cols-3 gap-4 place-content-center w-full">
+          {searchResults.map((result) => (
+            <MainSearchResults
+              key={result.jobId}
+              jobTitle={result.jobTitle}
+              jobLocation={result.locationName}
+              jobMinSalary={result.minimumSalary}
+              jobMaxSalary={result.maximumSalary}
+              jobPosted={result.date}
+              jobLink={result.jobUrl}
+              closeDate={result.closingDate}
+            />
+          ))}
+        </div>
+      )}
+    </div>
+
 
       <MainFooter />
       
