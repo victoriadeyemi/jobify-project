@@ -9,7 +9,7 @@ function Search() {
 
             <form className="bg-cyan-600 bg-opacity-75 p-6 md:p-10 rounded-lg w-full shadow-lg">
 
-                <h1 className="font-serif text-2xl md:text-3xl leading-tight text-center font-normal text-white mb-8">Find your dream Job Today!</h1>
+                <h1 className="font-serif text-2xl md:text-3xl leading-tight text-center font-normal text-white mb-8">Find your dream JOB today!</h1>
 
                 <div className="flex flex-wrap items-end -mx-3">
                     <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
