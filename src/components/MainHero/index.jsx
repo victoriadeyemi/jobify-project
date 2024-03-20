@@ -3,6 +3,7 @@ import MainSearch from '../MainSearch'
 
 function Hero() {
   return (
+
     <div className="Hero w-screen h-full " >
       <img src="src\components\MainHero\Images\hero.jpg" className="w-screen h-full"></img>
 
@@ -12,8 +13,6 @@ function Hero() {
 
       </div>
     </div>
-
-
   );
 }
 
