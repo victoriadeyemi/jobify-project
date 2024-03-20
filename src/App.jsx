@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import './App.css'
+import 'animate.css';
 import MainNav from '/src/components/MainNav/index.jsx'
 import MainHero from '/src/components/MainHero/index.jsx'
 import MainFooter from '/src/components/MainFooter/index.jsx'
@@ -78,7 +79,7 @@ function App() {
     </div>
 
 
-      <MainFooter />
+      <MainFooter id="footer" />
       
     </>
 

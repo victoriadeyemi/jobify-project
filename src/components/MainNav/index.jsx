@@ -15,11 +15,6 @@ function Navbar() {
           </a>
 
           <div className="hidden md:flex space-x-4">
-            <a href="#" className="text-cyan-600 font-bold p-2 hover:text-blue-300">Home</a>
-
-            <a href="#" className="text-cyan-600 font-bold p-2 hover:text-blue-300">About</a>
-
-            <a href="#" className="text-cyan-600 font-bold p-2 hover:text-blue-300">Services</a>
 
             <a href="#footer" className="text-cyan-600 font-bold p-2 hover:text-blue-300">Contact</a>
 

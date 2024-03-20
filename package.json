@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "axios": "^1.6.7",
     "got": "^14.2.1",
     "preline": "^2.0.3",
