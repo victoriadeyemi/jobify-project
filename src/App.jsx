@@ -57,7 +57,7 @@ function App() {
 
       <MainHero />
 
-      <MainSearch/>
+      {/* <MainSearch/> */}
     <div className="container mx-auto"> 
       {(searchResults.length > 0) && (
         <div className="searchResults grid grid-cols-3 gap-4 place-content-center w-full">
