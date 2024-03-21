@@ -1,15 +1,15 @@
 import React from 'react'
 import MainSearch from '../MainSearch'
 
-function Hero() {
+function Hero({fetchJobs, searchParams, setSearchParams}) {
   return (
 
-    <div className="Hero w-screen h-full " >
+    <div className="Hero h-full " >
       <img src="src\components\MainHero\Images\hero.jpg" className="w-screen h-full"></img>
 
       <div className='searchbar'>
         
-        <MainSearch />
+        <MainSearch fetchJobs={fetchJobs} searchParams={searchParams} setSearchParams={setSearchParams} />
 
       </div>
     </div>

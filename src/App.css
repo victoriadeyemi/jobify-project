@@ -1,10 +1,14 @@
 #root {
-  max-width: 1280px;
-  /* margin: 0 auto; */
-  /* padding: 2rem; */
+  max-width: 100% !important;
   text-align: center;
+  --animate-duration: 2s;
+  
 }
 
+.card {
+  animation-duration: infinite;
+  overflow: hidden;
+}
 
 .Hero {
   position: relative;
@@ -17,8 +21,9 @@
   transform: translate(-50%, -50%);
 }
 
-  /* text-align: center;
-} */
+.cardSearch{
+  animation-duration: var(--animate-duration);
+}
 
 .logo {
   height: 6em;

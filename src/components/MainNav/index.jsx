@@ -3,11 +3,11 @@ import React from 'react';
 function Navbar() {
 
   return (
-    <nav className="bg-opacity-75 bg-white w-screen mx-0.5 px-3 border-gray-200 rounded-[36px]">
+    <nav className="bg-opacity-75 bg-white mx-0.5 px-3 border-gray-200 rounded-[36px]">
 
       <div className="container mx-auto">
 
-
+  
         <div className="flex justify-between items-center">
 
           <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -22,10 +22,9 @@ function Navbar() {
 
         </div>
 
-      </div>
+        </div>
 
     </nav>
-
 
 
   );
