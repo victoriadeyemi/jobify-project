@@ -34,9 +34,31 @@ function Search({ fetchJobs, searchParams, setSearchParams }) {
                             type="text"
                             value={searchParams.keywords}
                         />
+                        <label
+                            className="block uppercase tracking-wide text-white text-sm font-bold mb-2"
+                            htmlFor="keywords">Job Title</label>
+                        <input
+                            className="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-grey"
+                            id="keywords"
+                            onChange={handleChange}
+                            placeholder="e.g. 'Engineer' "
+                            type="text"
+                            value={searchParams.keywords}
+                        />
                     </div>
 
                     <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                        <label
+                            className="block uppercase tracking-wide text-white text-sm font-bold mb-2"
+                            htmlFor="locationName">Location</label>
+                        <input
+                            className="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-grey"
+                            id="locationName"
+                            onChange={handleChange}
+                            placeholder="Town or Postcode"
+                            type="text"
+                            value={searchParams.locationName}
+                        />
                         <label
                             className="block uppercase tracking-wide text-white text-sm font-bold mb-2"
                             htmlFor="locationName">Location</label>

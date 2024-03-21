@@ -8,27 +8,16 @@ import MainSearchResults from '/src/components/MainSearchResults/index.jsx'
 import axios from 'axios'
 
 function App() {
-  const [count, setCount] = useState(0);
-
   const [searchResults, setSearchResults] = useState([]);
-
+  const [searchParams, setSearchParams] = useState({
+    keywords: '',
+    locationName: '',
+    distanceFromLocation: '15',
+  });
 
   useEffect(() => {
-    // Set the API endpoint URL
     const apiUrl = 'https://www.reed.co.uk/api/1.0/search';
-
-    // Set the API key
     const apiKey = 'b85ff21b-c075-4a4b-863f-cbfdd2f47c33';
-
-    // Set the search parameters
-    const searchParams = {
-      keywords: 'accountant',
-      locationName: 'London',
-      distanceFromLocation: '15',
-      // Add more search parameters as needed
-    };
-
-    // Set the proxy server URL
     const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
 
     // Make the API request using Axios
@@ -55,7 +44,7 @@ function App() {
     <>
       <MainNav />
 
-      <MainHero />
+      <MainHero searchParams={searchParams} setSearchParams={setSearchParams} />
 
     <div className="container mx-auto"> 
       {(searchResults.length > 0) && (

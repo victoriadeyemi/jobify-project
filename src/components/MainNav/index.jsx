@@ -18,11 +18,13 @@ function Navbar() {
 
             <a href="#footer" className="text-cyan-600 font-bold p-2 hover:text-blue-300">Contact</a>
 
+
           </div>
 
         </div>
 
         </div>
+
 
     </nav>
 
