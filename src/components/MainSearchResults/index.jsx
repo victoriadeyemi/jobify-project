@@ -1,4 +1,4 @@
-import React from 'react';
+import react from 'react';
 
 function MainSearchResults({ jobTitle, jobLocation, jobMinSalary, jobPosted, jobMaxSalary, jobLink, closeDate }) {
     return (
@@ -25,7 +25,7 @@ function MainSearchResults({ jobTitle, jobLocation, jobMinSalary, jobPosted, job
                             <p className="text-violet-600 font-bold p-2 hover:text-white">Location: {jobLocation}</p>
                             <a href={jobLink} class="mt-3 text-black dark:text-white hover:text-blue-600 inline-flex items-center font-bold">Learn More
                                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                    stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                                 </svg>
                             </a>
