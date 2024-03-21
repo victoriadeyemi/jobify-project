@@ -17,6 +17,7 @@ function Navbar() {
 
           <div className="hidden md:flex space-x-4">
 
+          <Link to="/" className="text-cyan-600 font-bold p-2 hover:text-blue-300">Home</Link>
             <Link to="/contact" className="text-cyan-600 font-bold p-2 hover:text-blue-300">Contact</Link>
             <Link to="/MyJobs" className="text-cyan-600 font-bold p-2 hover:text-blue-300">My Jobs</Link>
 
