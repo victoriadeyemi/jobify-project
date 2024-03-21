@@ -54,7 +54,7 @@ function Home() {
                                 jobMaxSalary={result.maximumSalary}
                                 jobPosted={result.date}
                                 jobLink={result.jobUrl}
-                                closeDate={result.closingDate}
+                                closeDate={result.expirationDate}
                             />
                         ))}
                     </div>
