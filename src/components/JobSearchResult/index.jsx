@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import MainSearchResults from "../MainSearchResults";
 
 function JobSearchResult() {
     return (
@@ -8,6 +10,4 @@ function JobSearchResult() {
     );
     }
 
-
-    export default JobSearchResult;
-    
+    export default JobSearchResult

@@ -23,6 +23,7 @@ function MainSearchResults({ jobTitle, jobLocation, jobMinSalary, jobPosted, job
                             <p className="text-black font-bold p-2 hover:text-white">Date Posted: {jobPosted}</p>
                             <p className="text-white font-bold p-2 hover:text-black">Salary: £{jobMinSalary} - £{jobMaxSalary}</p>
                             <p className="text-violet-600 font-bold p-2 hover:text-white">Location: {jobLocation}</p>
+                            <p className="text-black font-bold p-2 hover:text-white">Job Closes: {closeDate}</p>
                             <a href={jobLink} class="mt-3 text-black dark:text-white hover:text-blue-600 inline-flex items-center font-bold">Learn More
                                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                     stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
