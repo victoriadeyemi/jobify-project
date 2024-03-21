@@ -1,10 +1,11 @@
 import react from 'react';
+import Modal from './components/Modal';
+
 
 
 function MainSearchResults({ jobTitle, jobLocation, jobMinSalary, jobPosted, jobMaxSalary, jobLink, closeDate }) {
     return (
         <div className="flex flex-wrap justify-center mx-auto px-20 py-5 grid grid-cols-2 ">
-
             <div className="p-4 max-w-sm">
                 <div className="CardSearch hover:animate-pulse bg-cyan-600 bg-opacity-75 flex rounded-lg h-full p-8 flex-col min-w-80">
                     <div className="flex items-center mb-3">
@@ -18,7 +19,7 @@ function MainSearchResults({ jobTitle, jobLocation, jobMinSalary, jobPosted, job
                         <h2 className="text-white dark:text-white text-lg font-medium">{jobTitle}</h2>
                     </div>
                     <div className="flex flex-col justify-between flex-grow">
-
+                    <Modal/>
                         <a href={jobLink}>
                             <p className="text-black font-bold p-2 hover:text-white">Date Posted: {jobPosted}</p>
                             <p className="text-white font-bold p-2 hover:text-black">Salary: £{jobMinSalary} - £{jobMaxSalary}</p>
@@ -31,14 +32,12 @@ function MainSearchResults({ jobTitle, jobLocation, jobMinSalary, jobPosted, job
                                 </svg>
                             </a>
                         </a>
-
                     </div>
                 </div>
             </div>
         </div>
-
-
     )
 }
+
 
 export default MainSearchResults;
