@@ -5,8 +5,10 @@ import MainNav from './components/MainNav';
 import './App.css'
 import 'animate.css';
 
+
 function App() {
   return (
+
       <Router>
         <MainNav />
         <Routes>

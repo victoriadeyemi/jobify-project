@@ -1,19 +1,42 @@
 import react from 'react';
 
-function MainSearchResults () {
+
+function MainSearchResults({ jobTitle, jobLocation, jobMinSalary, jobPosted, jobMaxSalary, jobLink, closeDate }) {
     return (
-        <div className="searchResults">
-            
-<a href="#" class="block max-w-sm p-6 bg-white border border-cyan-600 rounded-lg shadow hover:bg-cyan-800 dark:bg-cyan-600 dark:border-cyan-800 dark:hover:bg-cyan-800">
+        <div className="flex flex-wrap justify-center mx-auto px-20 py-5 grid grid-cols-2 ">
 
-<h5 class="mb-2 text-2xl font-bold tracking-tight text-cyan-900 dark:text-white">Software developer</h5>
-<p class="font-light text-cyan-100 dark:text-cyan-100">job posted 2days ago</p>
-<p class="font-bold text-cyan-100 dark:text-cyan-20">£29,000 - £35000 per annum</p>
-<p class="font-normal text-cyan-100 dark:text-cyan-100">location Wolverhampton</p>
-<p class="font-normal text-cyan-100 dark:text-cyan-100">See More...</p>
-</a>
+            <div className="p-4 max-w-sm">
+                <div className="CardSearch hover:animate-pulse bg-cyan-600 bg-opacity-75 flex rounded-lg h-full p-8 flex-col min-w-80">
+                    <div className="flex items-center mb-3">
+                        <div
+                            className=" w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full dark:bg-indigo-500 bg-indigo-500 text-white flex-shrink-0">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            </svg>
+                        </div>
+                        <h2 className="text-white dark:text-white text-lg font-medium">{jobTitle}</h2>
+                    </div>
+                    <div className="flex flex-col justify-between flex-grow">
 
+                        <a href={jobLink}>
+                            <p className="text-black font-bold p-2 hover:text-white">Date Posted: {jobPosted}</p>
+                            <p className="text-white font-bold p-2 hover:text-black">Salary: £{jobMinSalary} - £{jobMaxSalary}</p>
+                            <p className="text-violet-600 font-bold p-2 hover:text-white">Location: {jobLocation}</p>
+                            <a href={jobLink} class="mt-3 text-black dark:text-white hover:text-blue-600 inline-flex items-center font-bold">Learn More
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
         </div>
+
+
     )
 }
 

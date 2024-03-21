@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 
@@ -51,16 +50,17 @@ function Search({ fetchJobs, searchParams, setSearchParams }) {
                             value={searchParams.locationName}
                         />
                     </div>
-                    <div className="w-full md:w-1/3 px-3 md:mb-0">
+                    <div className=" w-full md:w-1/3 px-3 md:mb-0">
+
                         <button
-                            className="font-bold leading-tight bg-white hover:text-blue-300 w-full text-cyan-600 hover:bg-white uppercase text-base tracking-wide py-3 px-4 rounded"
+                            className="hover:animate-bounce font-bold leading-tight bg-white hover:text-blue-300 w-full text-cyan-600 hover:bg-whiteuppercase text-base tracking-wide py-3 px-4 rounded"
                         >Search
                         </button>
+
                     </div>
                 </div>
             </form>
         </div>
-
 
     );
 }
