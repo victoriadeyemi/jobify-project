@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
 
@@ -10,13 +11,13 @@ function Navbar() {
   
         <div className="flex justify-between items-center">
 
-          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="src\components\MainNav\images\navlogo.png" alt="logo" className=" rounded w-30 h-20" />
-          </a>
+          </Link>
 
           <div className="hidden md:flex space-x-4">
 
-            <a href="#footer" className="text-cyan-600 font-bold p-2 hover:text-blue-300">Contact</a>
+            <Link to="/contact" className="text-cyan-600 font-bold p-2 hover:text-blue-300">Contact</Link>
 
 
           </div>

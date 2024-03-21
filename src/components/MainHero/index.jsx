@@ -1,6 +1,7 @@
 import React from 'react'
 import MainSearch from '../MainSearch'
 
+
 function Hero({fetchJobs, searchParams, setSearchParams}) {
   return (
 

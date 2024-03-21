@@ -1,8 +1,8 @@
 import react from 'react';
 
+
 function MainSearchResults({ jobTitle, jobLocation, jobMinSalary, jobPosted, jobMaxSalary, jobLink, closeDate }) {
     return (
-
         <div className="flex flex-wrap justify-center mx-auto px-20 py-5 grid grid-cols-2 ">
 
             <div className="p-4 max-w-sm">

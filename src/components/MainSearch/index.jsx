@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 function Search({ fetchJobs, searchParams, setSearchParams }) {
     const handleChange = (e) => {
         const { id, value } = e.target;
