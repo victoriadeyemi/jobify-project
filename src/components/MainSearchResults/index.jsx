@@ -19,11 +19,12 @@ function MainSearchResults({ jobTitle, jobLocation, jobMinSalary, jobPosted, job
                     </div>
                     <div className="flex flex-col justify-between flex-grow">
 
-                        <a href={jobLink}>
+                        <a href={jobLink} target="_blank">
                             <p className="text-black font-bold p-2 hover:text-white">Date Posted: {jobPosted}</p>
                             <p className="text-white font-bold p-2 hover:text-black">Salary: £{jobMinSalary} - £{jobMaxSalary}</p>
                             <p className="text-violet-600 font-bold p-2 hover:text-white">Location: {jobLocation}</p>
-                            <a href={jobLink} class="mt-3 text-black dark:text-white hover:text-blue-600 inline-flex items-center font-bold">Learn More
+                            <p className="text-black font-bold p-2 hover:text-white">Job Closes: {closeDate}</p>
+                            <a href={jobLink} target="_blank" class="mt-3 text-black dark:text-white hover:text-blue-600 inline-flex items-center font-bold">Learn More
                                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                     stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                                     <path d="M5 12h14M12 5l7 7-7 7"></path>
