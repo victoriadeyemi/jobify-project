@@ -34,7 +34,7 @@ Tayyaba ifzal (https://github.com/tayyabaifzal)
 Victoria Adeyemi (https://github.com/victoriadeyemi)
 
 ## Questions
-If you have questions about this repository or application, you can email me at <a href="mailto:victoriadeyemi1038@gmail.com">victoriadeyemi1038@gmail.com</a>  or visit my GitHub page at [victoriadeyemi](https://github.com/victoriadeyemi) // OR <a href="mailto:tayyaba.afzal@gmail.com">tayyaba.afzal@gmail.com</a>  or visit my GitHub page at [tayyabaifzal](https://github.com/tayyabaifzal)
+If you have questions about this repository or application, you can email me at <a href="mailto:victoriadeyemi1038@gmail.com">victoriadeyemi1038@gmail.com</a>  or visit my GitHub page at [victoriadeyemi](https://github.com/victoriadeyemi) // OR email Tayyaba at <a href="mailto:tayyaba.afzal@gmail.com">tayyaba.afzal@gmail.com</a>  or visit her GitHub page at [tayyabaifzal](https://github.com/tayyabaifzal)
 
 ## Jobify-application
 ![Here is a screenshot of the working application](./src/images/jobify-project-homepage.png)
