@@ -5,6 +5,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
     "./dist/*.html",
   ],
+  purge: {
+    content: [
+      "./src/**/*.html",
+      "./public/**/*.html",
+      "./dist/*.html",
+    ],
+  },
   theme: {
     extend: {
       animate:{
