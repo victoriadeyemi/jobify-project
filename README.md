@@ -5,6 +5,7 @@
   - [Table of Contents](#table-of-contents)
   - [Description](#description)
   - [Installations](#installations)
+  - [Libraries](#libraries)
   - [Usage](#usage)
   - [Contribution](#contribution)
   - [Contributors](#contributors)
@@ -22,6 +23,9 @@ The first step is to install [Node.js](https://nodejs.org/en) onto your computer
 Install all dependencies by running the command "npm install" in the terminal.
 Invoke the application by running the command "npm run dev" in the terminal.
 
+## Libraries 
+Tailwind Flowbite
+Animate CSS
 
 ## Usage
 This application will take in information from users who are seeking prospective employers, about the roles they seek, location and desired pay.  This application enables job seekers to find the roles they seeking in the respective location, salary sought using the user's input in the search bar. This website makes employment process smooth and easy for all seeking jobs.
