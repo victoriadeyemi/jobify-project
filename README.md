@@ -1,6 +1,8 @@
 # Jobify-project
 
 ## Table of Contents
+- [Jobify-project](#jobify-project)
+  - [Table of Contents](#table-of-contents)
   - [Description](#description)
   - [Installations](#installations)
   - [Usage](#usage)
@@ -28,15 +30,16 @@ This application will take in information from users who are seeking prospective
 If you wish to contribute to this application, you are welcome to do to so. Simply clone this repository, create your branch and submit a pull request. Please provide a clear title to enable me and others understand what you have contributed. Cheers.
 
 ## Contributors
-Tayyaba ifzal (https://github.com/tayyabaifzal
+Tayyaba ifzal (https://github.com/tayyabaifzal)
 Victoria Adeyemi (https://github.com/victoriadeyemi)
 
 ## Questions
 If you have questions about this repository or application, you can email me at <a href="mailto:victoriadeyemi1038@gmail.com">victoriadeyemi1038@gmail.com</a>  or visit my GitHub page at [victoriadeyemi](https://github.com/victoriadeyemi) // OR <a href="mailto:tayyaba.afzal@gmail.com">tayyaba.afzal@gmail.com</a>  or visit my GitHub page at [tayyabaifzal](https://github.com/tayyabaifzal)
 
 ## Jobify-application
-![Here is a screenshot of the working application](./assets/images/team-profile-generator-output-html.png)
-![Here is a screenshot of the working application](./assets/images/team-profile-generator-output-html.png)
+![Here is a screenshot of the working application](./src/images/jobify-project-homepage.png)
+![Here is a screenshot of the working application](./src/images/jobify-project-searchresults.png)
+![Here is a screenshot of the working application](./src/images/jobify-project-searchresults1.png)
 ![Here is a screen recording of the working application](https://drive.google.com/file/d/1UTvVZNBY7NRgn8hM-ySZb4niJl6WLlVq/view?usp=sharing)
 
 ## License
