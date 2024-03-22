@@ -8,7 +8,7 @@ function Navbar() {
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex space-x-3 rtl:space-x-reverse">
-            <img src="src\components\MainNav\images\navlogo.png" alt="logo" className=" rounded w-30 h-20" />
+            <img src="navlogo.png" alt="logo" className=" rounded w-30 h-20" />
           </Link>
           <div className="hidden md:flex space-x-4">
 
