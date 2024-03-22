@@ -2,6 +2,7 @@ import { useState } from 'react'
 import MainHero from '/src/components/MainHero/index.jsx'
 import MainFooter from '/src/components/MainFooter/index.jsx'
 import MainSearchResults from '/src/components/MainSearchResults/index.jsx'
+import Modal from '../components/Modal'
 import axios from 'axios'
 
 function Home() {
@@ -27,9 +28,7 @@ function Home() {
             .then((response) => {
                 // Handle the response data
                 console.log(response.data);
-
                 setSearchResults(response.data.results)
-
             })
             .catch((error) => {
                 // Handle any errors
@@ -39,9 +38,7 @@ function Home() {
 
     return (
         <>
-
             <MainHero fetchJobs={fetchJobs} searchParams={searchParams} setSearchParams={setSearchParams} />
-
             <div className="container mx-auto">
                 {(searchResults.length > 0) && (
                     <div className="searchResults grid grid-cols-3 gap-4 place-content-center w-full">
@@ -60,11 +57,8 @@ function Home() {
                     </div>
                 )}
             </div>
-
             <MainFooter id="footer" />
-
         </>
-
     );
 }
 
