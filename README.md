@@ -24,7 +24,7 @@ Install all dependencies by running the command "npm install" in the terminal.
 Invoke the application by running the command "npm run dev" in the terminal.
 
 ## Libraries 
-Tailwind Flowbite
+Tailwind Flowbite, 
 Animate CSS
 
 ## Usage
