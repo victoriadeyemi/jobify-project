@@ -37,7 +37,7 @@ If you have questions about this repository or application, you can email me at 
 ## Jobify-application
 ![Here is a screenshot of the working application](./assets/images/team-profile-generator-output-html.png)
 ![Here is a screenshot of the working application](./assets/images/team-profile-generator-output-html.png)
-![Here is a screen recording of the working application](./assets/images/team-profile-generator-output-html.png)
+![Here is a screen recording of the working application](https://drive.google.com/file/d/1UTvVZNBY7NRgn8hM-ySZb4niJl6WLlVq/view?usp=sharing)
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
