@@ -2,6 +2,7 @@ import { useState } from 'react'
 import MainHero from '/src/components/MainHero/index.jsx'
 import MainFooter from '/src/components/MainFooter/index.jsx'
 import MainSearchResults from '/src/components/MainSearchResults/index.jsx'
+import Modal from '/src/components/Modal/index.jsx'
 import axios from 'axios'
 
 function Home() {

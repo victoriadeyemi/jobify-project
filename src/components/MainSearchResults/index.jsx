@@ -1,5 +1,4 @@
 import react from 'react';
-import Modal from './components/Modal';
 
 
 
@@ -19,7 +18,6 @@ function MainSearchResults({ jobTitle, jobLocation, jobMinSalary, jobPosted, job
                         <h2 className="text-white dark:text-white text-lg font-medium">{jobTitle}</h2>
                     </div>
                     <div className="flex flex-col justify-between flex-grow">
-                    <Modal/>
                         <a href={jobLink}>
                             <p className="text-black font-bold p-2 hover:text-white">Date Posted: {jobPosted}</p>
                             <p className="text-white font-bold p-2 hover:text-black">Salary: £{jobMinSalary} - £{jobMaxSalary}</p>
