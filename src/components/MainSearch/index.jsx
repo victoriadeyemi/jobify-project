@@ -9,7 +9,6 @@ function Search({ fetchJobs, searchParams, setSearchParams }) {
             [id]: value,
         }));
     }
-
     const handleSubmit = (e) => {
         e.preventDefault();
         fetchJobs();
