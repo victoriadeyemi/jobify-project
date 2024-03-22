@@ -12,6 +12,11 @@
 
 .Hero {
   position: relative;
+  background-image: url("src/components/MainHero/Images/hero.jpg");
+  background-size: cover;
+  background-position-y: 25%;
+  width: 100vw;
+  height: 70vh;
 }
 
 .searchbar {
