@@ -7,7 +7,6 @@ A job board application for talent to find the job they deserve.
 
 This application will take in information from users who are seeking prospective employers, about the roles they seek, location and desired pay.  This application enables job seekers to find the roles they seeking in the respective location.
 
-**** The rest is from an old read me... to be edited as we carry on**
 
 ## Table of Contents
 - [Team-profile-generator](#team-profile-generator)
