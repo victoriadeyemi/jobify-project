@@ -3,7 +3,6 @@ import Home from './Pages/Home';
 import Contact from './Pages/Contact';
 import MainNav from './components/MainNav';
 import MyJobs from './Pages/MyJobs';
-import Modal from './components/Modal';
 import './App.css'
 import 'animate.css';
 
