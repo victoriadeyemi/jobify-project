@@ -5,8 +5,7 @@ import MainSearch from '../MainSearch'
 function Hero({fetchJobs, searchParams, setSearchParams}) {
   return (
 
-    <div className="Hero h-full " >
-      <img src="src\components\MainHero\Images\hero.jpg" className="w-screen h-full"></img>
+    <div className="Hero" >
 
       <div className='searchbar'>
         

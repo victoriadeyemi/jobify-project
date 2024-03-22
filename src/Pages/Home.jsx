@@ -14,7 +14,7 @@ function Home() {
 
     const fetchJobs = () => {
         const apiUrl = 'https://www.reed.co.uk/api/1.0/search';
-        const apiKey = 'b85ff21b-c075-4a4b-863f-cbfdd2f47c33';
+        const apiKey = '59e5ef4d-7d6a-41f6-bd2a-d13c01c79e6d';
         const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
 
         // Make the API request using Axios
@@ -54,7 +54,7 @@ function Home() {
                                 jobMaxSalary={result.maximumSalary}
                                 jobPosted={result.date}
                                 jobLink={result.jobUrl}
-                                closeDate={result.closingDate}
+                                closeDate={result.expirationDate}
                             />
                         ))}
                     </div>
